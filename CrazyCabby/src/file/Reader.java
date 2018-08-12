@@ -37,7 +37,7 @@ public class Reader {
 		Scanner s = null;
 		
 			try {
-			s =new Scanner(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/file/highScores"));
+			s =new Scanner(new File("/home/jwax/git/Frogger/CrazyCabby/src/file/highScores"));
 		
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -89,7 +89,7 @@ public class Reader {
 			 name = f.getText();
 			 try {
 				 if(name != null) {
-					BufferedWriter r = new BufferedWriter(new FileWriter("/home/jwax/eclipse-workspace/CrazyCabby/src/file/highScores",true));
+					BufferedWriter r = new BufferedWriter(new FileWriter("/home/jwax/git/Frogger/CrazyCabby/src/file/highScores",true));
 					if(data.size()>0) {
 					r.newLine();
 					r.write(name);

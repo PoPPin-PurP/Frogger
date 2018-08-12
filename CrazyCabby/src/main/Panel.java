@@ -50,10 +50,10 @@ public void makeMenu() {
 	Title.setFont(new Font("Arial", Font.BOLD, 100));
 	j.add(Title);
 	try {
-		piccolo = ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/piccolo.png"));
-		 ronaldo = ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/Ronaldini.jpg"));
-		 meme =ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/crainum.jpg"));
-		 oldman = ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/oldman.jpg"));
+		piccolo = ImageIO.read(new File("piccolo.png"));
+		 ronaldo = ImageIO.read(new File("Ronaldini.jpg"));
+		 meme =ImageIO.read(new File("crainum.jpg"));
+		 oldman = ImageIO.read(new File("oldman.jpg"));
 		 image.add(meme);
 		 image.add(oldman);
 		 image.add(piccolo);
@@ -63,6 +63,7 @@ public void makeMenu() {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+		if(image.size()!=0)
 		j.add(new JLabel(new ImageIcon(image.get(0))));
 	
 	

@@ -151,8 +151,8 @@ public class Gui extends JPanel implements ActionListener{
 	public void makeTrump() {
 		
 		try {
-			trump = ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/trump.png"));
-			lopez = ImageIO.read(new File("/home/jwax/eclipse-workspace/CrazyCabby/src/lopez.png"));
+			trump = ImageIO.read(new File("trump.png"));
+			lopez = ImageIO.read(new File("lopez.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
